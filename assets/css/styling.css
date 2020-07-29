@@ -16,29 +16,8 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-.navbar-brand strong {
-  text-shadow: 0 0 6px #fff, 2px 2px 5px #000, 2px 2px 5px #000;
-}
-
 section#contact {
-  background-image: url("../../assets/img/kontakt-bg.jpg");
+  background-image: url("../../assets/img/kontakt-bg2.jpg");
   background-size: 100% 100%;
-}
-
-#mainNav .navbar-brand em {
-  color: #fff;
-  font-family: Helvetica Neue,Helvetica,Arial,cursive;
-}
-
-#mainNav .navbar-brand {
-  /*margin-left: 15px;*/
-}
-
-#mainNav .navbar-brand {
-}
-
-#mainNav .navbar-brand {
-  /*color: #fed136;*/
-  /*font-family: Arial;*/
 }
 
