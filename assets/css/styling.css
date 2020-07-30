@@ -1,23 +1,30 @@
 header.masthead .intro-text .intro-heading {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 1.5em;
 }
 
 @media (min-width:768px) {
   header.masthead .intro-text .intro-heading {
     font-size: 36px;
-    line-height: 40px;
   }
 }
 
-@media (min-width:768px) {
-  header.masthead .intro-text .intro-lead-in {
-    line-height: 56px;
-  }
+header.masthead .intro-text .intro-lead-in {
+  line-height: 1.5em;
 }
 
 section#contact {
   background-image: url("../../assets/img/kontakt-bg2.jpg");
+  background-size: 100% 100%;
+}
+
+.navbar-brand .rounded-circle.img-fluid {
+  width: 2.8em;
+}
+
+.codewars-badge {
+  background-image: url(https://www.codewars.com/users/ntrix/badges/large);
+  height: 50px;
   background-size: 100% 100%;
 }
 
