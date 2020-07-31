@@ -37,6 +37,12 @@ section#contact {
 }
 
 .btn-group > a {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+}
+
+@media (min-width:768px) {
+  .modal .btn-group a {
+    font-size: 1.1em;
+  }
 }
 
