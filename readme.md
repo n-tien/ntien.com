@@ -1,30 +1,30 @@
 # MEINE WEBSEITE
 
-#Responsive Portfolio Webseite.
+Responsive Portfolio Webseite.
 
 
 
-# ----------------------------------------------
+## ----------------------------------------------
 
-# Tools und Technologie:
+## Tools und Technologie:
 
-#Bootstrap 4
+* Bootstrap 4
 
-#HTML 5
+* HTML 5
 
-#CSS 3
+* CSS 3
 
-#Javascript ES6
+* Javascript ES6
 
-#JQuery 3
+* JQuery 3
 
-#Later option: PHP 7
+* Later option: PHP 7
 
 
-# ----------------------------------------------
+## ----------------------------------------------
 
-#Datum: Juni 2020
+Datum: Juni 2020
 
-#Branche: Identität
+Branche: Identität
 
-#Kategorie: Web
+Kategorie: Web
