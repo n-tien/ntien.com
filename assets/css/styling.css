@@ -90,3 +90,13 @@ section#contact {
   line-height: 2.5em;
 }
 
+.carousel-inner {
+  /*position: relative;*/
+  height: 480px;
+  /*overflow: hidden;*/
+}
+
+.portfolio-modal .modal-content {
+  padding: 30px 0;
+}
+
