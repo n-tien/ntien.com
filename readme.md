@@ -18,7 +18,7 @@ Responsive Portfolio Webseite.
 
 * JQuery 3
 
-* Later option: PHP 7
+* ~~Later option: 	PHP 7~~	 
 
 
 ## ----------------------------------------------
