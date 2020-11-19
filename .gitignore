@@ -4,3 +4,4 @@ assets/fonts/*
 assets/js/agency.js
 assets/js/bs-init.js
 assets/js/jquery.min.js
+.DS_STORE
