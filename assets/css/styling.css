@@ -1,5 +1,20 @@
+.page-brand {
+  text-shadow: 0 0 4px #fff, 1px 1px 6px #000, 2px 2px 8px #000;
+}
+
 header {
-  background-image: url('../img/nt_bg.jpg');
+  background: center / cover url('../img/nt_bg.jpg') no-repeat;
+  height: 32em;
+}
+.header-overlay{
+  position: absolute;
+  height: 32em;
+  width: 100%;
+  background: #100b00aa;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    margin-left: 2rem;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -10,6 +25,9 @@ header.masthead .intro-text .intro-heading {
 @media (min-width:768px) {
   header.masthead .intro-text .intro-heading {
     font-size: 36px;
+  }
+  header,.header-overlay {
+    height: 52em;
   }
 }
 
