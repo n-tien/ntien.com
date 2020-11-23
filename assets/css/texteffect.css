@@ -1,6 +1,9 @@
 .text-effect--container h2 {
     font-family: fantasy, monospace, sans-serif;
 }
+.text-effect--container {
+    height: 60em;
+}
 @media (max-width: 768px) {
 	.text-effect--container {
 		font-size: 0.6em;
@@ -11,7 +14,7 @@ a, a:hover {
 }
 a:hover {
 	transition: all 0.3s ease-in;
-	transform: scale(1.1) !important;
+	transform: scale(1.03) !important;
 }
 .sp-content {
 	position: relative;
@@ -59,7 +62,7 @@ a:hover {
 	18% {
 	opacity: 0;
 	text-shadow: 0 0 3rem #fff;
-	-webkit-ransform: scale(0);
+	-webkit-transform: scale(0);
 	}
 	30% {
 	opacity: 0;

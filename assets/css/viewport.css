@@ -1,39 +1,31 @@
-.animation-box {
+.animation-box-l{
     opacity:0.1;
-}
-.animation-col {
-    transform: scaleY(2);
-    opacity:0;
-}
-.animation-box:nth-child(odd){
-    transform: translateX(500px);
-}
-.animation-box:nth-child(even){
     transform: translateX(-500px);
 }
-
-.visible {
+.animation-box-r{
+    opacity:0.1;
+    transform: translateX(500px);
+}
+.visible-r, .visible-l {
     transition: all 0.5s ease;
     opacity:1;
+    transform: translateX(0);
+}
+
+.animation-col {
+    transform: scaleY(1.5);
+    opacity:0;
 }
 .visible-col {
     opacity: 1;
-    transition: all 1s ease;
+    transition: all 1.2s ease;
     transform: scaleY(1);
-}
-/*.visible::after{
-    content: " Box - AAaaaahhhhhh, I'm visible!";
-}*/
-
-.visible:nth-child(odd),.visible:nth-child(even) {
-    transform: translateX(0);
 }
 
 .animation-row {
     transform: scaleX(3);
     opacity:0;
 }
-
 .visible-row {
     transition: all 1s ease;
     opacity:1;

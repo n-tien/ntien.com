@@ -1,51 +1,47 @@
-// function viewportChecker(e) {
-//     var rect = e.getBoundingClientRect();
-//     return (
-//         rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// }
+const animationRow = document.querySelectorAll(".animation-row");
+const animationCol = document.querySelectorAll(".animation-col");
+const animationBoxL = document.querySelectorAll(".animation-box-l");
+const animationBoxR = document.querySelectorAll(".animation-box-r");
 
 function setViewportVisibility() {
-    for (var i = 0; i < animationBox.length; i++) {
-    if (elementInViewport(animationBox[i])) {
-        animationBox[i].classList.add("visible");
-    } else {
-        animationBox[i].classList.remove("visible");
+    for (let a of animationBoxR) {
+        if (elementInViewport(a)) {
+            a.classList.add("visible-r");
+        } else {
+            a.classList.remove("visible-r");
+        }
+    }
+    for (let a of animationBoxL) {
+        if (elementInViewport(a)) {
+            a.classList.add("visible-l");
+        } else {
+            a.classList.remove("visible-l");
         }
     }
 
-    for (var i = 0; i < animationCol.length; i++) {
-    if (elementInViewport(animationCol[i])) {
-        animationCol[i].classList.add("visible-col");
-    } else {
-        animationCol[i].classList.remove("visible-col");
+    for (let a of animationCol) {
+        if (elementInViewport(a)) {
+            a.classList.add("visible-col");
+        } else {
+            a.classList.remove("visible-col");
         }
     }
 
-    for (var i = 0; i < animationRow.length; i++) {
-    if (elementInViewport(animationRow[i])) {
-        animationRow[i].classList.add("visible-row");
-    } else {
-        animationRow[i].classList.remove("visible-row");
+    for (let a of animationRow) {
+        if (elementInViewport(a)) {
+            a.classList.add("visible-row");
+        } else {
+            a.classList.remove("visible-row");
         }
     }
 }
-var animationRow = document.querySelectorAll(".animation-row");
-var animationCol = document.querySelectorAll(".animation-col");
-var animationBox = document.querySelectorAll(".animation-box");
 window.addEventListener("load", setViewportVisibility);
 window.addEventListener("scroll", setViewportVisibility);
 
 function elementInViewport(e) {
-    var bounding = e.getBoundingClientRect();
-    var myElementHeight = e.offsetHeight;
-    var myElementWidth = e.offsetWidth;
+    const bounding = e.getBoundingClientRect();
+    const myElementHeight = e.offsetHeight;
 
     return (bounding.top >= -myElementHeight
-        && bounding.left >= -myElementWidth
-        && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
         && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight);
 }

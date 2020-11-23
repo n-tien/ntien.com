@@ -5,29 +5,18 @@
 header {
   background: center / cover url('../img/nt_bg3.jpg') no-repeat;
   height: 32em;
-	-webkit-animation: cycle-bg 45s ease-in forwards;
-			animation: cycle-bg 45s ease-in forwards;
+	-webkit-animation: cycle-bg 30s ease-in forwards;
+			animation: cycle-bg 30s ease-in forwards;
 }
 .header-overlay{
   position: absolute;
   height: 32em;
   width: 100%;
-  background: #100b00bb;
-}
-
-@keyframes cycle-bg {
-  30%  {
-    background: center / cover url('../img/nt_bg3.jpg') no-repeat;
-  }
-	50%, 80% {
-    background: center / cover url('../img/nt_bg2.jpg') no-repeat;
-	}
-	100% {
-    background: center / cover url('../img/nt_bg1.jpg') no-repeat;
-	}
+  background: #100b00cc;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-    margin-left: 2rem;
+    margin-left: 1rem;
+    text-align: center;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -53,6 +42,47 @@ header.masthead .intro-text .intro-lead-in {
 	display: flex;
 	flex-direction: column;
   line-height: 1.5em;
+}
+
+.btn-draw {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  color: #fed136;
+  font-weight: bold;
+  position: relative;
+  outline: none;
+  padding: 0 2rem;
+}
+.btn-draw::before, .btn-draw::after {
+  box-sizing: inherit;
+  position: absolute;
+  content: '';
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.btn-draw::before {
+  top: 1px;
+  left: 0;
+}
+.btn-draw::after {
+  bottom: 0;
+  right: 0;
+}
+.btn-draw:hover::before, .btn-draw:hover::after {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8,1);
+}
+.btn-draw:hover::before {
+  border-top-color: #fed136;
+  transition: width 0.2s ease-out;
+}
+.btn-draw:hover::after {
+  border-bottom-color: #fed136;
+  transition: width 0.2s ease-out 0.2s;
 }
 
 section#contact {
@@ -159,7 +189,6 @@ section#contact {
 
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 
 /* ---- particles.js container ---- */
