@@ -3,16 +3,29 @@
 }
 
 header {
-  background: center / cover url('../img/nt_bg.jpg') no-repeat;
+  background: center / cover url('../img/nt_bg3.jpg') no-repeat;
   height: 32em;
+	-webkit-animation: cycle-bg 45s ease-in forwards;
+			animation: cycle-bg 45s ease-in forwards;
 }
 .header-overlay{
   position: absolute;
   height: 32em;
   width: 100%;
-  background: #100b00aa;
+  background: #100b00bb;
 }
 
+@keyframes cycle-bg {
+  30%  {
+    background: center / cover url('../img/nt_bg3.jpg') no-repeat;
+  }
+	50%, 80% {
+    background: center / cover url('../img/nt_bg2.jpg') no-repeat;
+	}
+	100% {
+    background: center / cover url('../img/nt_bg1.jpg') no-repeat;
+	}
+}
 #mainNav .navbar-nav .nav-item .nav-link {
     margin-left: 2rem;
 }
@@ -30,7 +43,12 @@ header.masthead .intro-text .intro-heading {
     height: 52em;
   }
 }
-
+@media (min-width: 992px) {
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1em;
+    padding: 0;
+  }
+}
 header.masthead .intro-text .intro-lead-in {
 	display: flex;
 	flex-direction: column;
@@ -158,5 +176,5 @@ canvas {
 
 #mainNav {
   padding: 0 !important;
-  opacity: 0.85;
+  opacity: 0.95;
 }
