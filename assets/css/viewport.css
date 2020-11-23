@@ -1,30 +1,41 @@
 .animation-box {
     opacity:0.1;
 }
-.animation-middle {
-    transform: scaleX(0.01);
+.animation-col {
+    transform: scaleY(2);
+    opacity:0;
 }
 .animation-box:nth-child(odd){
-    transform: translateX(300px);
+    transform: translateX(500px);
 }
 .animation-box:nth-child(even){
-    transform: translateX(-300px);
+    transform: translateX(-500px);
 }
 
-.visible, .visible-middle {
-    transition: all 0.35s ease;
+.visible {
+    transition: all 0.5s ease;
     opacity:1;
 }
-.visible-middle {
-    transform: scaleX(1);
+.visible-col {
+    opacity: 1;
+    transition: all 1s ease;
+    transform: scaleY(1);
 }
 /*.visible::after{
     content: " Box - AAaaaahhhhhh, I'm visible!";
 }*/
 
-.visible:nth-child(odd){
+.visible:nth-child(odd),.visible:nth-child(even) {
     transform: translateX(0);
 }
-.visible:nth-child(even){
-    transform: translateX(0);
+
+.animation-row {
+    transform: scaleX(3);
+    opacity:0;
+}
+
+.visible-row {
+    transition: all 1s ease;
+    opacity:1;
+    transform: scaleX(1);
 }

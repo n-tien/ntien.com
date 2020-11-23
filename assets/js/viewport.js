@@ -17,15 +17,24 @@ function setViewportVisibility() {
         }
     }
 
-    for (var i = 0; i < animationMiddle.length; i++) {
-    if (elementInViewport(animationMiddle[i])) {
-        animationMiddle[i].classList.add("visible");
+    for (var i = 0; i < animationCol.length; i++) {
+    if (elementInViewport(animationCol[i])) {
+        animationCol[i].classList.add("visible-col");
     } else {
-        animationMiddle[i].classList.remove("visible");
+        animationCol[i].classList.remove("visible-col");
+        }
+    }
+
+    for (var i = 0; i < animationRow.length; i++) {
+    if (elementInViewport(animationRow[i])) {
+        animationRow[i].classList.add("visible-row");
+    } else {
+        animationRow[i].classList.remove("visible-row");
         }
     }
 }
-var animationMiddle = document.querySelectorAll(".animation-middle");
+var animationRow = document.querySelectorAll(".animation-row");
+var animationCol = document.querySelectorAll(".animation-col");
 var animationBox = document.querySelectorAll(".animation-box");
 window.addEventListener("load", setViewportVisibility);
 window.addEventListener("scroll", setViewportVisibility);
@@ -35,8 +44,8 @@ function elementInViewport(e) {
     var myElementHeight = e.offsetHeight;
     var myElementWidth = e.offsetWidth;
 
-    return (bounding.top >= -myElementHeight +32
+    return (bounding.top >= -myElementHeight
         && bounding.left >= -myElementWidth
         && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
-        && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight -32);
+        && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight);
 }
