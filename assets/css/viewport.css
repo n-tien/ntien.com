@@ -1,0 +1,33 @@
+.animation-box-l{
+    opacity:0.1;
+    transform: translateX(-500px);
+}
+.animation-box-r{
+    opacity:0.1;
+    transform: translateX(500px);
+}
+.visible-r, .visible-l {
+    transition: all 0.5s ease;
+    opacity:1;
+    transform: translateX(0);
+}
+
+.animation-col {
+    transform: scaleY(1.5);
+    opacity:0;
+}
+.visible-col {
+    opacity: 1;
+    transition: all 1.2s ease;
+    transform: scaleY(1);
+}
+
+.animation-row {
+    transform: scaleX(3);
+    opacity:0;
+}
+.visible-row {
+    transition: all 1s ease;
+    opacity:1;
+    transform: scaleX(1);
+}

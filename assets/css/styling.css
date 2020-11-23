@@ -1,3 +1,24 @@
+.page-brand {
+  text-shadow: 0 0 4px #fff, 1px 1px 6px #000, 2px 2px 8px #000;
+}
+
+header {
+  background: center / cover url('../img/nt_bg3.jpg') no-repeat;
+  height: 32em;
+	-webkit-animation: cycle-bg 30s ease-in forwards;
+			animation: cycle-bg 30s ease-in forwards;
+}
+.header-overlay{
+  position: absolute;
+  height: 32em;
+  width: 100%;
+  background: #100b00cc;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    margin-left: 1rem;
+    text-align: center;
+}
+
 header.masthead .intro-text .intro-heading {
   font-size: 24px;
   line-height: 1.5em;
@@ -7,10 +28,61 @@ header.masthead .intro-text .intro-heading {
   header.masthead .intro-text .intro-heading {
     font-size: 36px;
   }
+  header,.header-overlay {
+    height: 52em;
+  }
+}
+@media (min-width: 992px) {
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+header.masthead .intro-text .intro-lead-in {
+	display: flex;
+	flex-direction: column;
+  line-height: 1.5em;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  line-height: 1.5em;
+.btn-draw {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  color: #fed136;
+  font-weight: bold;
+  position: relative;
+  outline: none;
+  padding: 0 2rem;
+}
+.btn-draw::before, .btn-draw::after {
+  box-sizing: inherit;
+  position: absolute;
+  content: '';
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.btn-draw::before {
+  top: 1px;
+  left: 0;
+}
+.btn-draw::after {
+  bottom: 0;
+  right: 0;
+}
+.btn-draw:hover::before, .btn-draw:hover::after {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8,1);
+}
+.btn-draw:hover::before {
+  border-top-color: #fed136;
+  transition: width 0.2s ease-out;
+}
+.btn-draw:hover::after {
+  border-bottom-color: #fed136;
+  transition: width 0.2s ease-out 0.2s;
 }
 
 section#contact {
@@ -82,18 +154,17 @@ section#contact {
   height: 3em;
 }
 
-.overlay h5 {
-  /*line-height: 2.5em;*/
-}
-
 .carousel-inner {
-  /*position: relative;*/
   height: 480px;
-  /*overflow: hidden;*/
 }
 
 .portfolio-modal .modal-content {
   padding: 30px 0;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
 }
 
 .fa.fa-external-link {
@@ -101,3 +172,38 @@ section#contact {
   line-height: 3rem;
 }
 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#mainNav {
+  padding: 0 !important;
+  opacity: 0.95;
+}
