@@ -12,22 +12,14 @@ header {
   position: absolute;
   height: 32em;
   width: 100%;
-  background: #100b00cc;
+  background: #100b00bb;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     margin-left: 1rem;
     text-align: center;
 }
 
-header.masthead .intro-text .intro-heading {
-  font-size: 24px;
-  line-height: 1.5em;
-}
-
 @media (min-width:768px) {
-  header.masthead .intro-text .intro-heading {
-    font-size: 36px;
-  }
   header,.header-overlay {
     height: 52em;
   }
@@ -37,11 +29,6 @@ header.masthead .intro-text .intro-heading {
     font-size: 1em;
     padding: 0;
   }
-}
-header.masthead .intro-text .intro-lead-in {
-	display: flex;
-	flex-direction: column;
-  line-height: 1.5em;
 }
 
 .btn-draw {
