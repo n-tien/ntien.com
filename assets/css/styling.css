@@ -84,7 +84,9 @@ section#contact {
 .navbar-brand .rounded-circle.img-fluid {
   width: 2.8em;
 }
-
+.timeline-image {
+  top: 0;
+}
 .codewars-badge {
   background-image: url(https://www.codewars.com/users/ntrix/badges/large);
   height: 50px;
