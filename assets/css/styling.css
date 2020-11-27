@@ -1,3 +1,7 @@
+#mainNav {
+  padding: 0;
+}
+
 .page-brand {
   text-shadow: 0 0 4px #fff, 1px 1px 6px #000, 2px 2px 8px #000;
 }
