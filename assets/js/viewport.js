@@ -41,7 +41,9 @@ window.addEventListener("scroll", setViewportVisibility);
 function elementInViewport(e) {
     const bounding = e.getBoundingClientRect();
     const myElementHeight = e.offsetHeight;
-
+    // debugger;
+    if(e.className.search('timeline-inverted') > -1)
+    console.log(e, bounding, myElementHeight)
     return (bounding.top >= -myElementHeight
         && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight);
 }
