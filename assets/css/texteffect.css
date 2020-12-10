@@ -1,5 +1,5 @@
 .text-effect--container h2 {
-    font-family: fantasy, monospace, sans-serif;
+    font-family: monospace, sans-serif;
 }
 .text-effect--container {
     height: 60em;
@@ -165,7 +165,7 @@ a:hover {
 
 .button a {
 	position: absolute;
-    bottom: -2em;
+    bottom: -2.4em;
     margin-left: 3em;
     padding-top: 4em;
     font-size: 0.3em;
