@@ -19,6 +19,7 @@ Nodejs
 Portfolio">
     <link rel="icon" type="image/png" sizes="600x600" href="assets/img/ntien-logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
@@ -49,9 +50,9 @@ Portfolio">
                 </div>
         </div>
     </nav>
-    <header class="masthead animation-row">
+    <header class="masthead">
         <div class="header-overlay"></div>
-        <div class="text-effect--container">
+        <div class="text-effect--container animation-row">
             <div class="sp-container">
                 <div class="sp-content">
                     <h2 class="frame-1">Hallo!</h2>
@@ -92,7 +93,7 @@ Portfolio">
                 </div>
                 <div class="col-md-4 animation-box-l"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-html5 fa-stack-1x fa-inverse"></i></span>
                     <h4 class="section-heading"><strong>Web Developer</strong><br></h4>
-                    <p class="text-muted">Meine Studienfachrichtung war Wirtschaftsinformatik, daher habe ich als Webentwickler sowohl Frontend als auch Backend gemacht.<br></p>
+                    <p class="text-muted">Meine Studienfachrichtung war Wirtschaftsinformatik und habe ich als Webentwickler sowohl Frontend als auch Backend gemacht.<br></p>
                 </div>
             </div>
         </div>
@@ -105,47 +106,61 @@ Portfolio">
                     <h3 class="section-subheading text-muted"><em>Einige meiner Freizeit-Projekte, von denen manche als Demo, Fotogalerie und / oder als Quellcode verfügbar.</em></h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 portfolio-item animation-box-r">
-                    <a class="portfolio-link" href="#projekt-1" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                            <div class="portfolio-thumbnail"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__ntien.png" loading="lazy">
-                                <div class="overlay"><i class="fa fa-external-link"></i></div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4><br>Meine Webseite</h4>
-                        <p class="text-muted">Diese responsive Portfolio-Webseite.<br><br><br>Bootstrap, HTML, CSS, Javascript, JQuery, PHP.<br></p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 portfolio-item animation-col">
+            <div class="row d-flex justify-content-center"">
+                <div class="col-sm-6 col-md-4 order-2 order-md-1 portfolio-item translate-30 animation-col">
                     <a class="portfolio-link" href="#projekt-2" data-toggle="modal">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                            <div class="portfolio-thumbnail"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__bitmain.png" loading="lazy">
-                                <div class="overlay"><i class="fa fa-external-link"></i></div>
+                            <div class="portfolio-hover-content"><i class="fa fa-folder fa-3x"></i></div>
+                            <div class="portfolio-thumbnail cert"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__bitmain.png" loading="lazy">
+                                <div class="overlay"><i class="fa fa-folder-open"></i></div>
                             </div>
                         </div>
                     </a>
                     <div class="portfolio-caption">
-                        <h4><br>Trading App</h4>
-                        <p class="text-muted">Bitmain Trading Web-App, in Arbeit.<br><br><br>Angular, Node.js, Webpack, TypeScript, SCSS, Firebase und/oder MySQL, PHPMyAdmin.<br></p>
+                        <h4><br>BitMain Trading</h4>
+                        <p class="text-muted">Bitmain Trading Web-App, Full Stack MEAN, Phase 1: Frontend.<br><br>Tech. Stack:<br>Angular, Node.js, Webpack, TypeScript, SCSS, Firebase BAAS oder MongoDB/MySQL &amp; PHPMyAdmin (Phase 2).<br></p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 portfolio-item animation-box-l">
-                    <a class="portfolio-link" href="#projekt-3" data-toggle="modal">
+                <div class="col-sm-6 col-md-4 order-1 portfolio-item animation-box-r">
+                    <a class="portfolio-link" href="#projekt-1" data-toggle="modal">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                            <div class="portfolio-thumbnail"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__insight.png" loading="lazy">
-                                <div class="overlay"><i class="fa fa-external-link"></i></div>
+                            <div class="portfolio-hover-content"><i class="fa fa-folder fa-3x"></i></div>
+                            <div class="portfolio-thumbnail cert"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__zoombook.jpg" loading="lazy">
+                                <div class="overlay"><i class="fa fa-folder-open"></i></div>
                             </div>
                         </div>
                     </a>
                     <div class="portfolio-caption">
-                        <h4><br>PSD 2 Theme</h4>
-                        <p class="text-muted">Exemplare von Frontend-Projekten. Umwandlung PSD-Vorlagen in Themen.<br><br>Photoshop, HTML, CSS, JQuery.<br></p>
+                        <h4><br>ZoomBook</h4>
+                        <p class="text-muted">Sozial Web-App wie Facebook und Zoom, Full Stack MERN.<br><br>Tech. Stack:<br>React, Node.js, Express, MongoDB, Mongoose, Pug, SCSS, Swagger, Postman, Heroku.<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 order-3 portfolio-item translate-30 animation-col">
+                    <a class="portfolio-link" href="#projekt-3" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-folder fa-3x"></i></div>
+                            <div class="portfolio-thumbnail cert"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__cfhouse.jpg" loading="lazy">
+                                <div class="overlay"><i class="fa fa-folder-open"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4><br>Coffee House</h4>
+                        <p class="text-muted">The Coffee House freelance Projekt, Frontend/ Landing Page.<br><br>Tech. Stack:<br>Photoshop, HTML, CSS, Vanilla Javascript, JQuery.<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 order-4 portfolio-item animation-box-l">
+                    <a class="portfolio-link" href="#projekt-4" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-folder fa-3x"></i></div>
+                            <div class="portfolio-thumbnail cert"><img class="img-fluid" src="assets/img/projekte/project-thumbnail__bookman.jpg" loading="lazy">
+                                <div class="overlay"><i class="fa fa-folder-open"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4><br>Book Man</h4>
+                        <p class="text-muted">Book Management Web-App, Full Stack Nodejs Serverside rendering.<br><br>Tech. Stack:<br>Node.js, Express, Pug, MongoDB, Mongoose, SCSS, Swagger, Postman, Heroku.<br></p>
                     </div>
                 </div>
             </div>
@@ -163,19 +178,21 @@ Portfolio">
                 <div class="col-lg-12">
                     <ul class="list-group timeline">
                         <li class="list-group-item animation-box-r">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/ICMarkets_hq_1.jpg" loading="lazy"></div>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/ICMarketsHQ.jpg" loading="lazy"></div>
+                            <div class="timeline-image img-hidden"><img class="rounded-circle img-fluid" src="assets/img/andere/icmarkets250.png" loading="lazy"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>2018 - Heute</h4>
                                     <h4 class="subheading"><strong>IC Markets Pty Ltd.</strong></h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Data Analyst<br>IB Agent in Vietnam<br>Software Developer</p>
+                                    <p class="text-muted">Data Analyst<br>IB Agent in Vietnam<br>Software Developer<br></p>
                                 </div>
                             </div>
                         </li>
                         <li class="list-group-item animation-box-l timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/3NRG2.jpg" loading="lazy"></div>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/3nrgGMBH.jpg" loading="lazy"></div>
+                            <div class="timeline-image img-hidden"><img class="rounded-circle img-fluid" src="assets/img/Logos/3nrg250.png" loading="lazy"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 class="subheading"><strong>3NRG GmbH, Bischofswerda</strong></h4>
@@ -186,10 +203,11 @@ Portfolio">
                             </div>
                         </li>
                         <li class="list-group-item animation-box-r">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/bac-ha_1.jpg" loading="lazy"></div>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/BacHaOHG.jpg" loading="lazy"></div>
+                            <div class="timeline-image img-hidden"><img class="rounded-circle img-fluid" src="assets/img/Logos/BacHa250.jpg" loading="lazy"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class="subheading"><strong>Bac-Ha AG,</strong><br><strong>Bacninh, Vietnam</strong></h4>
+                                    <h4 class="subheading"><strong>Bac-Ha AG,</strong><br><strong>Bac Ninh, Vietnam</strong></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Business Analyst<br>Software Engineer</p>
@@ -197,7 +215,8 @@ Portfolio">
                             </div>
                         </li>
                         <li class="list-group-item animation-box-l timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/INAX_vn_hq_2.jpg" loading="lazy"></div>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/ueber/INAXOG.jpg" loading="lazy"></div>
+                            <div class="timeline-image img-hidden"><img class="rounded-circle img-fluid" src="assets/img/Logos/Inax250.png" loading="lazy"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 class="subheading"><strong>Inax Sanitary Ware Co. Ltd.</strong></h4>
@@ -207,9 +226,31 @@ Portfolio">
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item animation-row timeline-inverted">
+                        <li class="list-group-item animation-row">
                             <div class="timeline-image text-secondary bg-light">
-                                <h4>.<br>.<br>.</h4>
+                                <h4>°<br>°<br>°</h4>
+                            </div>
+                        </li>
+                        <li class="list-group-item animation-box-r">
+                            <div class="timeline-image schools"><img class="rounded-circle img-fluid" src="assets/img/ueber/HTW-Dresden.jpg" loading="lazy"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">HTW-Dresden</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Hochschule für Technik und Wirtschaft<br>Richtung Wirtschaftinformatik</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item animation-box-l timeline-inverted">
+                            <div class="timeline-image schools"><img class="rounded-circle img-fluid" src="assets/img/ueber/HNAmsHighSchool.jpg" loading="lazy"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading"><strong>Hanoi-Amsterdam</strong></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Gymnasium für Begabten<br>Richtung Mathematik, Informatik.</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -222,28 +263,51 @@ Portfolio">
             <div class="row animation-row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading"><strong>Ein bisschen mehr</strong><br></h2>
-                    <h3 class="text-muted section-subheading"><em>Hier sind einige Orte, an denen ich meine Programmierungsfähigkeit sowie mein analytisches Denken in der Freizeit verbessert habe.</em><br></h3>
+                    <h3 class="text-muted section-subheading"><em>Hier sind meine Programmierung relevante Freizeitaktivitäten<br>(auch während Corona-Zeiten wurden ein paar frische Zertifikate gesammelt)</em><br></h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-5 portfolio-item team-member animation-box-r">
+                    <a class="text-center" href="https://www.freecodecamp.org/ntrix" target="_blank">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                            <div class="portfolio-thumbnail cert"><img class="img-fluid" src="assets/img/andere/FCC_cert_legacy_fullstack.jpg" loading="lazy">
+                                <div class="overlay"><i class="fa fa-external-link"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption info-more"><img class="img-fluid info" src="assets/img/andere/FCC_cert_others.jpg" loading="lazy">
+                            <h4 class="info-badge">FreeCodeCamp<br>Zertifikate<br></h4>
+                            <p class="text-muted">- Responsive Web Design<br>- JS Algorithms &amp; Data Structures<br>- Front End Libraries<br>- Data Visualization<br>- APIs and Microservices<br>- Quality Assurance<br><br>Legacy Full Stack<br></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-5 portfolio-item team-member animation-box-l">
+                    <a class="text-center" href="https://www.hackerrank.com/certificates/c3b031911ad3" target="_blank">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"></div>
+                            <div class="portfolio-thumbnail cert"><img class="img-fluid" src="assets/img/andere/HackerRank_cert_intermediate.jpg" loading="lazy">
+                                <div class="overlay"><i class="fa fa-external-link"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption info-more"><img class="img-fluid info" src="assets/img/andere/HackerRank_cert_others.jpg" loading="lazy">
+                            <h4 class="info-badge">HackerRank<br>Zertifikate<br></h4>
+                            <p class="text-muted">- JavaScript (Basic)<br>- Angular (Basic)<br>- React (Basic)<br>- Problem Solving (Basic)<br><br>- Problem Solving (Intermediate)<br><br>- Rest API (Intermediate)<br></p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 animation-box-r">
+                <div class="col-sm-6 col-md-4 translate-30 animation-col">
                     <div class="team-member"><a id="github-repo-links" href="https://github.com/ntrix" target="_blank"><img class="rounded-circle mx-auto" src="assets/img/andere/github250.png" loading="lazy"><h4>GitHub</h4></a>
-                        <p class="text-muted"><br>Aufbewahrungsort für meine letzten Freizeit-Projekte.</p>
+                        <p class="text-muted">Aufbewahrungsort für meine Freizeit-Projekte.</p>
                     </div>
                 </div>
-                <div class="col-sm-4 animation-col">
-                    <div class="team-member"><a id="codewars-profile-link" href="https://www.codewars.com/users/ntrix" target="_blank"><img class="rounded-circle mx-auto" src="assets/img/andere/codewars250.png" loading="lazy"><h4>CodeWars</h4></a>
-                        <p class="text-muted"><br>Programmierer-Ranking.<br>Codierungsfähigkeiten verschiedener Programmiersprachen.</p>
-                        <a href="https://www.codewars.com/users/ntrix" target="_blank">
-                            <div class="codewars-badge" loading="lazy"></div>
-                        </a>
-                    </div>
+                <div class="col-sm-6 col-md-4 animation-row">
+                    <div class="team-member"><a id="codewars-profile-link" href="https://www.codewars.com/users/ntrix" target="_blank"><img class="rounded-circle mx-auto" src="assets/img/andere/codewars250.png" loading="lazy"><div class="info-more" loading="lazy"><img class="img-fluid info" src="assets/img/andere/CodeWars_ranking250.jpg"><h4>CodeWars</h4><p class="text-muted">Programmierer-,<br>Hackathon-Ranking:</p><img class="img-fluid info-badge" src="https://www.codewars.com/users/ntrix/badges/large"><p class="text-muted"><br>Rank: 2 kyu<br>Position: Top 1.4%</p></div></a></div>
                 </div>
-                <div class="col-sm-4 animation-box-l">
-                    <div class="team-member"><a id="icmarkets-ref-link" href="http://www.icmarkets.com/?camp=29137" target="_blank"><img class="rounded-circle mx-auto" src="assets/img/andere/icmarkets250.png" loading="lazy"><h4>IC Markets</h4></a>
-                        <p class="text-muted"><br>Referenzlink für Forex-Händler, kundenspezifische Datenanalyse- und Handelstools, EA-Systeme auf der MT4-Plattform.<br>Bitte vorerst unten<br><a class="js-scroll-trigger" href="#contact">eine Nachricht hinterlassen.<br></a>oder&nbsp;
-                            <a
-                                href="mailto:contact@ntien.com"><button class="btn btn-primary" type="button">eMail&nbsp;<i class="fa fa-envelope"></i></button></a><br><br></p>
+                <div class="col-sm-6 col-md-4 translate-30 animation-col">
+                    <div class="team-member"><a id="icmarkets-ref-link" href="http://www.icmarkets.com/?camp=29137" target="_blank"><img class="rounded-circle mx-auto" src="assets/img/Logos/ic250.png" loading="lazy"><h4>IC Markets</h4></a>
+                        <p class="text-muted">Referenzlink für Devisen-Händler, kundenspezifische Datenanalyse- und Handelstools, EA-Systeme für MT4-Plattform.<br>Bitte vorerst<br><a class="js-scroll-trigger" href="#contact"><strong>eine Nachricht hinterlassen.</strong><br><br></a></p>
                     </div>
                 </div>
             </div>
@@ -263,16 +327,16 @@ Portfolio">
                         <div class="form-row">
                             <div class="col col-md-6">
                                 <div class="form-group animation-box-r"><input class="form-control" type="text" id="name" placeholder="Dein Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
-                                <div class="form-group animation-box-l"><input class="form-control" type="email" id="email" placeholder="Deine Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group animation-box-r"><input class="form-control" type="email" id="email" placeholder="Deine Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
                                 <div class="form-group animation-box-r"><input class="form-control" type="tel" placeholder="Deine Phone-Nummer"><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col-md-6 animation-col">
-                                <div class="form-group animation-box-l"><textarea class="form-control" id="message" placeholder="Deine Nachricht *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group animation-row"><textarea class="form-control" id="message" placeholder="Deine Nachricht *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col">
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="col-lg-12 text-center animation-row">
+                            <div class="col-lg-12 text-center translate-15 animation-row">
                                 <div id="success">
                                     <button class="btn btn-primary btn-xl animation-col" id="sendMessageButton" type="submit">Nachricht senden</button>
                                 </div>
@@ -284,9 +348,9 @@ Portfolio">
         </div>
     </section>
     <footer>
-        <div class="container" style="text-align: left;"><span class="copyright">Copyright&nbsp;© NTien.com 2020&nbsp;</span></div>
+        <div class="container" style="text-align: left;"><span class="copyright">Copyright © NTien.com 2020</span></div>
     </footer>
-    <div class="modal fade portfolio-modal text-center animation-row" role="dialog" tabindex="-1" id="projekt-1">
+    <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="projekt-1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -294,15 +358,37 @@ Portfolio">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h3 class="text-uppercase"><strong>Meine Website</strong></h3>
-                                    <p class="item-intro text-muted"><strong><em>Diese&nbsp;</em></strong><em>responsive&nbsp;Portfolio Webseite.</em></p>
-                                    <div class="btn-group"><a class="btn btn-warning bg-light text-muted">Projekt anzeigen</a><a class="btn btn-warning" href="https://github.com/ntrix/ntien.com" target="_blank">Github-link</a><a class="btn btn-danger" data-dismiss="modal">Zurück</a></div>
-                                    <p><br><strong>Tools und Technologie:</strong><br>Bootstrap 4, HTML 5, CSS 3, Javascript ES6, JQuery 3, (PHP 7).<br><br></p><img class="img-fluid d-block mx-auto" src="assets/img/projekte/project-thumbnail__ntien.png" loading="lazy">
-                                    <ul class="list-unstyled">
-                                        <li>Datum: Juni 2020</li>
-                                        <li>Branche: Identität</li>
-                                        <li>Kategorie: Web</li>
-                                    </ul>
+                                    <h3 class="text-uppercase"><strong>Zoom Book</strong></h3>
+                                    <p class="item-intro text-muted"><em>Ein Sozial MERN</em>&nbsp;Web-<em>App mit einige Funktionen wie Facebook und Zoom</em><br></p>
+                                    <div class="btn-group"><a class="btn btn-success" href="https://zoombook.herokuapp.com/" target="_blank">Demo anzeigen</a><a class="btn btn-info" href="https://app.swaggerhub.com/apis/ntrix/ZoomBook/1.0.0#/" target="_blank">API Dokumente</a>
+                                        <a
+                                            class="btn btn-warning" href="https://github.com/ntrix/ZoomBook" target="_blank">Github-Repo</a><a class="btn btn-danger" data-dismiss="modal">Zurück</a></div>
+                                    <p><br><strong>Tools und Technologie:</strong><br><strong>Frontend:</strong> Javascript, React, SASS, Photoshop ..<br><strong>Backend:</strong> Nodejs, Express js, MongoDB,<br>Mongoose, ..<br><strong>Others:</strong>&nbsp;Docker,
+                                        Postman, Git, Github, Heroku, ..<br></p><img class="img-fluid d-block mx-auto" src="assets/img/projekte/zoombook/zoombook800a.gif" loading="lazy">
+                                    <p><strong>Zoom Book</strong><br><br><strong>Zoom and Facebook</strong><br><strong>Video chat</strong><br><br>This is the main app, both parts of Backend and Frontend on one server.<br>These parts can also be used/deployed
+                                        separately.<br><br><strong>Backend only part:</strong><br><a href="https://github.com/ntrix/ZoomBookBE">https://github.com/ntrix/ZoomBookBE</a><br><br><strong>Frontend only part:</strong><br><a href="https://github.com/ntrix/ZoomBookFE">https://github.com/ntrix/ZoomBookFE</a><br><br><strong>Technologies:</strong><br>Frontend:
+                                        Javascript, React, SASS, Photoshop .. <br>Backend: Nodejs, Express js, MongoDB,<br>Mongoose, .. <br>Others: Docker, Postman, Git, Github, Heroku, ..<br><br><strong>Backend</strong><br><strong>API swagger</strong><br>
+                                        <a
+                                            href="https://app.swaggerhub.com/apis/ntrix/ZoomBook/1.0.0#/">https://app.swaggerhub.com/apis/ntrix/ZoomBook/1.0.0#/</a><br><br><strong>Database MongoDB</strong><br>Schema: Diagramm: app.diagrams.net<br><br><strong>Deploy:&nbsp;Heroku</strong><br><a href="https://zoombook.herokuapp.com/">https://zoombook.herokuapp.com/</a><br></p>
+                                    <img
+                                        class="img-fluid d-block mx-auto" src="assets/img/projekte/zoombook/zoombook800b.gif" loading="lazy">
+                                        <p><br><strong>Frontend UI UX,&nbsp;API &amp; Story-Buch:</strong><br><br>1. Benutzer müssen sich anmelden, um etwas anderes als die Anmeldeseite zu sehen.<br>2. Benutzer können sich mit echten Facebook-Details anmelden
+                                            (optional, deaktiviert).<br>3. Benutzer können Freundschaftsanfragen an andere senden.<br>4. Ein Benutzer kann die Freundschaftsanfrage annehmen, Freunde zu werden oder abzulehnen.<br>5. Benutzer können Beiträge
+                                            erstellen und / oder Bilder hochladen / veröffentlichen.<br>6. Benutzer können Beiträge mögen / reagieren.<br>7. Benutzer können aus 7 Arten von Reaktionen auswählen (Like, Wow, Love ..)<br>8. Benutzer können
+                                            Beiträge kommentieren.<br>9. Beiträge zeigen den Inhalt, den Autor, die Kommentare und Reaktionen (Likes) des Beitrags an.<br>10. Die Posts-Indexseite wird wie die echte Timeline-Funktion von Facebook angezeigt:
+                                            Alle aktuellen Posts des aktuellen Benutzers und seiner Freunde.<br>11. Benutzer können ein Profil ohne Fotos erstellen: Standard-Avatar und Titelbild (Hintergrundbild) reserviert.<br>12. Die Benutzerhomepage
+                                            enthält Profilinformationen, Avatar und Beiträge.<br>13. In der Seitenleiste "Kontakte" werden Freunde aufgelistet.<br>14. Jeder in der Kontaktseitenleiste aufgeführte Benutzer kann angeklickt werden, um ein
+                                            (privates) Chatfenster zu öffnen.<br>15. In der Seitenleiste Benutzer werden zufällige Benutzer und Schaltflächen zum Senden von Freundschaftsanfragen aufgelistet.<br>16. Benutzer können das Profil mit ihren
+                                            eigenen Fotos bearbeiten / aktualisieren: Hochladen eines Avatars und eines Titelbildes (Hintergrundbild) möglich.<br>17. Optional: Warnung E-Mail / Benachrichtigung und / oder vorübergehend deaktivierte IP
+                                            / Konto für 24 Stunden durch 3x / 4x falsche Passwörter.<br><br><strong>In Bearbeitung:</strong><br><br>Diese Funktionen werden als externes Modul betrachtet, das API und Vuejs von Drittanbietern verwendet (Vue
+                                            aus <a href="https://github.com/ntrix/vchat">einem anderen Projekt</a>).<br><br>18. Benutzer können einen Videokonferenzraum erstellen und einen Bildschirm freigeben.<br>19. Benachrichtigungen an alle / eingeladenen
+                                            Freunde.<br>20. Benutzer können dem erstellten Videokonferenzraum über einen auf der Timeline veröffentlichten Beitrag ihrer Freunde beitreten.<br><br></p><img class="img-fluid d-block mx-auto" src="assets/img/projekte/zoombook/zoombook800c.gif"
+                                            loading="lazy">
+                                        <ul class="list-unstyled">
+                                            <li>Datum: Märch 2020</li>
+                                            <li>Branche: Sozial Netzwerk</li>
+                                            <li>Kategorie: Full Stack MERN&nbsp;Web-App</li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +397,7 @@ Portfolio">
             </div>
         </div>
     </div>
-    <div class="modal fade portfolio-modal text-center animation-row" role="dialog" tabindex="-1" id="projekt-2">
+    <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="projekt-2">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -320,24 +406,28 @@ Portfolio">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h3 class="text-uppercase">Bitmain</h3>
-                                    <p class="item-intro text-muted">Web-App für Mobile-Trader, Kryptowährung und Devisen-Händler, responsive, in Arbeit,&nbsp;<strong>Live Demo</strong> verfügbar.</p>
-                                    <div class="btn-group"><a class="btn btn-success" href="http://bitmain.ntien.com/" target="_blank">Projekt anzeigen</a><a class="btn btn-warning" href="https://github.com/ntrix/bm" target="_blank">Github-link</a><a class="btn btn-danger"
-                                            data-dismiss="modal">Zurück</a></div>
-                                    <p><br><strong>Tools und Technologie:</strong><br>Angular, Webpack, SCSS, TypeScript,<br>Node.js, Firebase (und/oder MySQL, PHPMyAdmin).<br><br></p>
+                                    <p class="item-intro text-muted">Web-App für Mobile-Trader, Kryptowährung und Devisen-Händler, Mobile responsive, Full Stack MEAN, Phase 1: Fontend.</p>
+                                    <div class="btn-group"><a class="btn btn-success" href="http://bitmain.ntien.com/" target="_blank">Demo anzeigen</a><a class="btn btn-info bg-light text-muted" href="#" target="">API Dokumente</a><a class="btn btn-warning" href="https://github.com/ntrix/bm"
+                                            target="_blank">Github-Repo</a><a class="btn btn-danger" data-dismiss="modal">Zurück</a></div>
+                                    <p><br><strong>Tools und Technologie:</strong><br>Angular, Node.js, Webpack, TypeScript, SCSS, Firebase BAAS oder MongoDB/MySQL &amp; PHPMyAdmin (Phase 2).<br><br></p>
                                     <div class="carousel slide" data-ride="carousel" data-interval="3000"
                                         data-pause="false" id="carousel-1">
                                         <div class="carousel-inner" role="listbox">
-                                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-login.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-signup--dark.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-forex--loading.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-crypto--isloaded.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-side-menu.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-home--loading.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-home--isloaded.jpg" alt="Slide Image" loading="lazy"></div>
-                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/bitmain/bitmain-login__error-modal.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-login.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-signup--dark.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-forex--loading.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-crypto--isloaded.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-side-menu.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-home--loading.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-home--isloaded.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bitmain/bitmain-login__error-modal.jpg" alt="Slide Image" loading="lazy"></div>
                                         </div>
-                                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1"
-                                                role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                                        <div>
+                                            <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a>
+                                            <!-- End: Previous -->
+                                            <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>
+                                            <!-- End: Next -->
+                                        </div>
                                         <ol class="carousel-indicators bg-warning">
                                             <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
                                             <li data-target="#carousel-1" data-slide-to="1"></li>
@@ -362,7 +452,7 @@ Portfolio">
             </div>
         </div>
     </div>
-    <div class="modal fade portfolio-modal text-center animation-row" role="dialog" tabindex="-1" id="projekt-3">
+    <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="projekt-3">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -370,18 +460,91 @@ Portfolio">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
-                                    <h3 class="text-uppercase"><strong>.PSD zur Website</strong></h3>
-                                    <p class="item-intro text-muted"><em>Ein kleines Exemplar&nbsp;für die Frontend-Programmierung:&nbsp;Aufbau einer pixelgenauen Webseite aus&nbsp;einer Photoshop-Vorlage&nbsp;(.PSD Mockup).</em></p>
-                                    <div class="btn-group"><a class="btn btn-success" href="http://insight.ntien.com" target="_blank">Projekt anzeigen</a><a class="btn btn-warning" href="https://github.com/ntrix/insight" target="_blank">Github-link</a><a class="btn btn-danger"
-                                            data-dismiss="modal">Zurück</a></div>
-                                    <p><br><strong>Tools und Technologie:</strong><br>Photoshop 2020, HTML 5, CSS 3, (JQuery 3).<br><br>Diese Seite wurde auf meinem eigenen Weg aufgebaut um meine Programmierungskenntnisse und -Technik mit <a href="https://thesiteslinger.com/blog/tutorial-how-to-code-your-psd-into-a-html-css-layout"><strong>diesem Blog</strong></a>&nbsp;zu
-                                        vergleichen.<br><br><a href="https://github.com/ntrix/insight/raw/master/mockup/home.psd"><strong>.PSD Mockup herunterladen</strong></a><br>oder<br><a href="https://github.com/ntrix/insight"><strong>meine Quellcode auf Github ansehen</strong></a><br><br></p>
-                                    <img
-                                        class="img-fluid d-block mx-auto" src="https://github.com/ntrix/insight/blob/master/mockup/homea.jpg?raw=true" loading="lazy"><img class="img-fluid d-block mx-auto" src="https://github.com/ntrix/insight/blob/master/mockup/homeb.jpg?raw=true" loading="lazy">
-                                        <ul class="list-unstyled">
-                                            <li>Datum: Juli 2020</li>
-                                            <li>Branche: Allgemein</li>
-                                            <li>Kategorie: Frontend</li>
+                                    <h3 class="text-uppercase"><strong>Coffee HOUse</strong></h3>
+                                    <p class="item-intro text-muted">The Coffee House freelance Project, Frontend/Landing Page<br></p>
+                                    <div class="btn-group"><a class="btn btn-success" href="https://ntrix.github.io/cfhouse/" target="_blank">Demo anzeigen</a><a class="btn btn-info bg-light text-muted" href="#" target="">API Dokumente</a><a class="btn btn-warning" href="https://github.com/ntrix/cfhouse"
+                                            target="_blank">Github-Repo</a><a class="btn btn-danger" data-dismiss="modal">Zurück</a></div>
+                                    <p><br><strong>Tools und Technologie:</strong><br>Photoshop, HTML, CSS, Vanilla Javascript, JQuery.<br><br><strong>3 demo pages:</strong><br><br>index.html<br><br>product.html<br></p><a href="#">https://ntrix.github.io/cfhouse/product.html</a>
+                                    <p><br>detail.html<br></p><a href="#">https://ntrix.github.io/cfhouse/product.html</a>
+                                    <p>(a demo detail page for each product)<br><br></p><img class="img-fluid d-block mx-auto" src="assets/img/projekte/cfhouse/1.jpg" loading="lazy"><img class="img-fluid d-block mx-auto" src="assets/img/projekte/cfhouse/2.jpg" loading="lazy"><img class="img-fluid d-block mx-auto"
+                                        src="assets/img/projekte/cfhouse/3.jpg" loading="lazy"><img class="img-fluid d-block mx-auto" src="assets/img/projekte/cfhouse/4.jpg" loading="lazy"><img class="img-fluid d-block mx-auto" src="assets/img/projekte/cfhouse/5.jpg" loading="lazy"><img class="img-fluid d-block mx-auto"
+                                        src="assets/img/projekte/cfhouse/6.jpg" loading="lazy"><img class="img-fluid d-block mx-auto" src="assets/img/projekte/cfhouse/7.jpg" loading="lazy">
+                                    <ul class="list-unstyled">
+                                        <li>Datum: Dezember 2019</li>
+                                        <li>Branche: Business</li>
+                                        <li>Kategorie: Frontend</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="projekt-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h3 class="text-uppercase"><strong>Book Mann App</strong></h3>
+                                    <p class="item-intro text-muted"><em>Book Management Web-App, Full Stack Serverside rendering.</em><br></p>
+                                    <div class="btn-group"><a class="btn btn-success" href="https://book-lib-management.herokuapp.com/" target="_blank">Demo anzeigen</a><a class="btn btn-info" href="https://app.swaggerhub.com/apis/ntrix/BookMan/1.0.0" target="_blank">API Dokumente</a>
+                                        <a
+                                            class="btn btn-warning" href="https://github.com/ntrix/book-man-app" target="_blank">Github-Repo</a><a class="btn btn-danger" data-dismiss="modal">Zurück</a></div>
+                                    <p><br><strong>Tools und Technologie:</strong><br>Node.js, Express, Pug, MongoDB, Mongoose, SCSS, Swagger, Postman, Heroku<br></p>
+                                    <div class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false"
+                                        id="carousel-2">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/projekte/bookman/1.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/2.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/3.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/4.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/5.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/6.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/7.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/8.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/9.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/a.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/b.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/c.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/d.jpg" alt="Slide Image" loading="lazy"></div>
+                                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/projekte/bookman/e.jpg" alt="Slide Image" loading="lazy"></div>
+                                        </div>
+                                        <div>
+                                            <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a>
+                                            <!-- End: Previous -->
+                                            <!-- Start: Next --><a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>
+                                            <!-- End: Next -->
+                                        </div>
+                                        <ol class="carousel-indicators bg-warning">
+                                            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-2" data-slide-to="1"></li>
+                                            <li data-target="#carousel-2" data-slide-to="2"></li>
+                                            <li data-target="#carousel-2" data-slide-to="3"></li>
+                                            <li data-target="#carousel-2" data-slide-to="4"></li>
+                                            <li data-target="#carousel-2" data-slide-to="5"></li>
+                                            <li data-target="#carousel-2" data-slide-to="6"></li>
+                                            <li data-target="#carousel-2" data-slide-to="7"></li>
+                                            <li data-target="#carousel-2" data-slide-to="8"></li>
+                                            <li data-target="#carousel-2" data-slide-to="9"></li>
+                                            <li data-target="#carousel-2" data-slide-to="10"></li>
+                                            <li data-target="#carousel-2" data-slide-to="11"></li>
+                                            <li data-target="#carousel-2" data-slide-to="12"></li>
+                                            <li data-target="#carousel-2" data-slide-to="13"></li>
+                                        </ol>
+                                    </div>
+                                    <p><strong>Book Man App</strong><br><br>Books, library and users management<br>Web App Serverside rendering API for mobile device<br><br><strong>Test-Konto:</strong><br>email:&nbsp;<a href="mailto:tester@test.dev">tester@test.dev</a><br>password:
+                                        123123<br>please contact if you need an admin role test account<br><br><strong>Documents, API:</strong><br><a href="https://app.swaggerhub.com/apis/ntrix/BookMan/1.0.0">https://app.swaggerhub.com/apis/ntrix/BookMan/1.0.0</a><br><br><strong>Keywords:</strong><br>node,
+                                        nodejs, express, mongo, mongoDB, mongoose, lowdb, heroku, cloudinary, webmail, sendgrid, swagger<br><br><strong>Deploy und Test:</strong><br><a href="https://book-lib-management.herokuapp.com/">https://book-lib-management.herokuapp.com/</a><br></p>
+                                    <ul
+                                        class="list-unstyled">
+                                        <li>Datum: Juli 2020</li>
+                                        <li>Branche: Allgemein</li>
+                                        <li>Kategorie: Full Stack Backend</li>
                                         </ul>
                                 </div>
                             </div>
@@ -391,14 +554,11 @@ Portfolio">
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/agency.js"></script>
     <script src="assets/js/viewport.js"></script>
-    <!-- <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/setting2.js"></script> -->
 </body>
 
 </html>

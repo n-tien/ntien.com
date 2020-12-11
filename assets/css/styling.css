@@ -84,13 +84,16 @@ section#contact {
 .navbar-brand .rounded-circle.img-fluid {
   width: 2.8em;
 }
+
 .timeline-image {
   top: 0;
 }
-.codewars-badge {
-  background-image: url(https://www.codewars.com/users/ntrix/badges/large);
-  height: 50px;
+
+.info-more {
+  position: relative;
+  margin-top: auto;
   background-size: 100% 100%;
+  transition: .3s ease-out;
 }
 
 .projekt-quelle {
@@ -111,10 +114,7 @@ section#contact {
   }
 }
 
-.team-member a:hover {
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000;
-  opacity: 70%;
+a:hover {
   text-decoration: none;
 }
 
@@ -128,56 +128,27 @@ section#contact {
   width: 100%;
   height: auto;
   overflow: hidden;
+  border-radius: .25rem;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
+  left: 0;
   right: 0;
-  background-color: #0008;
   overflow: hidden;
   width: 100%;
   height: 0;
   text-align: center;
-  transition: .7s ease-out;
-}
-.overlay::before{
-  content: 'PROJEKT';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  overflow: hidden;
-  width: 0;
-  height: 60%;
-  text-align: center;
-  transition: .5s ease-out;
-}
-.overlay::after{
-  content: 'ANZEIGEN';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  right: 50%;
-  overflow: hidden;
-  width: 0;
-  height: 30%;
-  text-align: center;
-  transition: 1s ease-out;
-}
-.portfolio-hover:hover .overlay {
-  height: 70%;
+  border-radius: 0 0 .25rem .25rem;
+  background-color: #000b;
+  transition: .4s ease-out .4s;
 }
 
-.portfolio-hover:hover .overlay::before {
-  left: 20%;
-  right: 20%;
-  width: 60%;
+.portfolio-hover:hover .overlay {
+  height: 3em;
 }
-.portfolio-hover:hover .overlay::after {
-  left: 20%;
-  right: 20%;
-  width: 60%;
-}
+
 .carousel-inner {
   height: 480px;
 }
@@ -186,24 +157,102 @@ section#contact {
   padding: 30px 0;
 }
 
-.team-member {
-  display: flex;
-  flex-direction: column;
-}
-
-.fa.fa-external-link {
-  font-size: 1.5em;
+.overlay .fa {
+  font-size: 2em;
   line-height: 3rem;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+@media (min-width:768px) {
+  .translate-15 {
+    margin-top: 3rem;
+  }
+  .translate-30 {
+    margin-top: 6rem;
+  }
 }
 
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+.portfolio-caption.cert {
+  text-align: center;
+}
+
+.img-hidden {
+  transform: scale(0.3);
+  transition: .3s ease;
+  opacity: 0.7;
+}
+
+.list-group-item:hover .img-hidden {
+  opacity: 1;
+  transform: scale(1);
+  transition: .5s ease;
+}
+
+.info-more .info {
+  position: absolute;
+  left: 0;
+  border: none;
+  object-fit: contain;
+  min-width: 100%;
+  transform: scaleY(0);
+  transition: .5s ease-out;
+}
+
+.team-member:hover .rounded-circle {
+  transform: rotateY(360deg);
+  transition: .5s ease-in;
+}
+
+.portfolio-item .cert {
+  overflow: hidden;
+}
+
+.portfolio-item .cert img {
+  transition: .3s ease-in;
+}
+
+.portfolio-item .cert:hover img {
+  transform: scale(1.5);
+  transition: .5s ease-out;
+}
+
+.team-member .info-badge {
+  border: none;
+  height: 100%;
+  object-fit: contain;
+}
+
+.team-member:hover .info-more .info {
+  transform: scale(1.2);
+  transition: .5s ease-out;
+}
+
+#work .col-md-4,
+#projects .portfolio-item .portfolio-caption {
+  transition: .5s ease-out;
+}
+
+#work .col-md-4:hover {
+  transform: scale(1.05);
+  transition: .5s ease-out;
+}
+
+#work .col-md-4:hover .fa-stack,
+.list-group-item:hover .schools {
+  transform: rotateY(360deg);
+  transition: .5s ease-in;
+}
+
+.portfolio-item .fa-folder {
+  transition: margin .3s ease-in 0.3s, transform 0.3s ease-out;
+}
+
+.portfolio-item:hover .fa-folder {
+  transform: translate3d(0,100%,0);
+  margin-left: 40%;
+  transition: margin .3s ease-out, transform 0.3s ease-in 0.3s;
+}
+
+#projects .portfolio-item:hover .portfolio-caption {
+  transform: scale(1.05);
+  transition: .5s ease-out;
 }
