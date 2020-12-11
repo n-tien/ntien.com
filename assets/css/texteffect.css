@@ -1,5 +1,5 @@
 .text-effect--container h2 {
-    font-family: monospace, sans-serif;
+    font-family: 'Audiowide', monospace, sans-serif;
 }
 .text-effect--container {
     height: 60em;
@@ -18,7 +18,7 @@ a:hover {
 .sp-container h2 {
 	position: absolute;
 	width: 100%;
-	font-size: 6em;
+	font-size: 5.5em;
 	color: transparent;
 }
 .frame-1 {
