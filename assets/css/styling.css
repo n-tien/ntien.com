@@ -6,18 +6,24 @@
   text-shadow: 0 0 4px #fff, 1px 1px 6px #000, 2px 2px 8px #000;
 }
 
-header {
+#bg-dynamic {
+  position: fixed;
   background: center / cover url('../img/nt_bg3.jpg') no-repeat;
-  height: 32em;
-	-webkit-animation: cycle-bg 30s ease-in forwards;
-			animation: cycle-bg 30s ease-in forwards;
-}
-.header-overlay{
-  position: absolute;
-  height: 32em;
   width: 100%;
-  background: #100b00bb;
+  height: 100%;
+  z-index: -1;
 }
+header {
+  width: 100%;
+  height: 32em;
+}
+.header-overlay {
+  position: absolute;
+  background-color: #110b;
+  width: 100%;
+  height: 32em;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
     margin-left: 1rem;
     text-align: center;
@@ -34,8 +40,13 @@ header {
     padding: 0;
   }
 }
+.btn-group {
+  flex-wrap: wrap;
+}
 .btn {
-  margin: 0 0.5em;
+  margin-right: 0.5rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.3rem !important;
 }
 
 .btn-draw {
@@ -72,15 +83,21 @@ header {
 }
 .btn-draw:hover::before {
   border-top-color: #fed136;
-  transition: width 0.2s ease-out;
+  transition: width 0.25s ease-out;
 }
 .btn-draw:hover::after {
   border-bottom-color: #fed136;
-  transition: width 0.2s ease-out 0.2s;
+  transition: width 0.25s ease 0.25s;
 }
 
+section#work {
+  background-color: #fff;
+}
+section#about {
+  background-color: #210b;
+}
 section#contact {
-  background-image: url("../../assets/img/kontakt-bg2.jpg");
+  background-color: #001b;
   background-size: 100% 100%;
 }
 
@@ -97,18 +114,6 @@ section#contact {
   margin-top: auto;
   background-size: 100% 100%;
   transition: .3s ease-out;
-}
-
-.projekt-quelle {
-  text-transform: uppercase!important;
-  color: #000;
-  font-weight: bold;
-  /*text-shadow: 0 0 2px;*/
-  font-size: 1.4em;
-}
-
-.btn-group > a {
-  font-size: 0.75rem;
 }
 
 @media (min-width:768px) {
@@ -130,8 +135,6 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
-  overflow: hidden;
-  border-radius: .25rem;
 }
 
 .overlay {
@@ -143,17 +146,13 @@ a:hover {
   width: 100%;
   height: 0;
   text-align: center;
-  border-radius: 0 0 .25rem .25rem;
+  border-radius: 0 0 .3rem .3rem;
   background-color: #000b;
   transition: .4s ease-out .4s;
 }
 
 .portfolio-hover:hover .overlay {
   height: 3em;
-}
-
-.carousel-inner {
-  height: 480px;
 }
 
 .portfolio-modal .modal-content {
@@ -180,14 +179,30 @@ a:hover {
 
 .img-hidden {
   transform: scale(0.3);
-  transition: .3s ease;
+  transition: .3s ease-in;
   opacity: 0.7;
 }
 
 .list-group-item:hover .img-hidden {
   opacity: 1;
   transform: scale(1);
-  transition: .5s ease;
+  transition: .5s ease-out;
+}
+
+.list-group-item:hover .timeline-panel {
+  opacity: 1;
+  transition: .5s ease-out;
+}
+
+#about .heading,
+.timeline-panel {
+  opacity: 0.8;
+  padding-top: 1rem !important;
+  padding-bottom: 3rem !important;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: linear-gradient(0deg, #fff0 0%, #fff 70%);
+  background: -webkit-linear-gradient(90deg, #fff0 0%, #fff 70%);
+  transition: .3s ease-in;
 }
 
 .info-more .info {
@@ -197,16 +212,17 @@ a:hover {
   object-fit: contain;
   min-width: 100%;
   transform: scaleY(0);
-  transition: .5s ease-out;
+  transition: .3s ease-in;
 }
 
 .team-member:hover .rounded-circle {
   transform: rotateY(360deg);
-  transition: .5s ease-in;
+  transition: .5s ease-out;
 }
 
 .portfolio-item .cert {
   overflow: hidden;
+  border-radius: .3rem;
 }
 
 .portfolio-item .cert img {
@@ -230,11 +246,13 @@ a:hover {
 }
 
 #work .col-md-4,
-#projects .portfolio-item .portfolio-caption {
+#projects .portfolio-item .portfolio-caption,
+.team-member {
   transition: .5s ease-out;
 }
 
-#work .col-md-4:hover {
+#work .col-md-4:hover,
+.team-member:hover {
   transform: scale(1.05);
   transition: .5s ease-out;
 }
@@ -242,20 +260,35 @@ a:hover {
 #work .col-md-4:hover .fa-stack,
 .list-group-item:hover .schools {
   transform: rotateY(360deg);
-  transition: .5s ease-in;
+  transition: .5s ease-out;
 }
 
 .portfolio-item .fa-folder {
-  transition: margin .3s ease-in 0.3s, transform 0.3s ease-out;
+  transition: margin .3s ease-in 0.3s, transform 0.3s ease;
 }
 
 .portfolio-item:hover .fa-folder {
   transform: translate3d(0,100%,0);
   margin-left: 40%;
-  transition: margin .3s ease-out, transform 0.3s ease-in 0.3s;
+  transition: margin .3s ease-out, transform 0.3s ease 0.3s;
 }
 
 #projects .portfolio-item:hover .portfolio-caption {
   transform: scale(1.05);
   transition: .5s ease-out;
+}
+.navbar-collapse {
+  transition: .3s ease-out;
+}
+
+.fade:not(.show) {
+  transform: scale(0.5, 0);
+  transition: .3s ease-in;
+}
+.fade {
+  transform: scale(1);
+  transition: .5s ease-out;
+}
+.portfolio-modal .modal-content p:not(.item-intro) {
+  text-align: left;
 }
