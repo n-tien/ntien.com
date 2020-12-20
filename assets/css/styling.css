@@ -1,3 +1,8 @@
+html::-webkit-scrollbar,
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
 #mainNav {
   padding: 0;
 }
