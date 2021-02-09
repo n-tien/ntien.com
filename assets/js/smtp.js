@@ -41,23 +41,22 @@ var Email = {
 
 let contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", (e) => {
+  const data = {
+    text: $("#message").val(),
+    email: $("#email").val(),
+    name: $("#name").val(),
+  };
   e.preventDefault();
-  let text = $("#message").val();
-  let email = $("#email").val();
-  let name = $("#name").val();
-  if (!text || !email || !name)
+  if (!data.text || !data.email || !data.name) {
     return alert("Es tut mir leid, aber etwas fehlt ..");
-  Email.send({
-    SecureToken: "03e699de-f107-48f3-9417-9095cad742ab",
-    To: "regnosp@yahoo.de",
-    From: "ntien@ntien.com",
-    Subject:
-      "ntien.com: <email:" +
-        email +
-        "> name:" +
-        name +
-        ", phone:" +
-        $("#phone").val() || "<no tel>" + " Kunden Kontakt",
-    Body: text,
-  }).then((message) => alert(message));
+  }
+  console.log(JSON.stringify(data));
+  fetch("https://mailsv.glitch.me/mail", {
+    mode: "cors",
+    method: "POST", // or 'PUT'
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+  contactForm.reset();
+  return alert("Danke! Deine Nachricht wurde gesendet.");
 });
